@@ -62,7 +62,7 @@
             android:value="io:${io_version}" />	       
 	 </config-file>
 
-<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+<edit-config file="AndroidManifest.xml" parent="/manifest/application" mode="merge">
     <application android:name="com.webengage.sdk.android.key" android:value="in~11b564243"/>
     <application android:name="com.webengage.sdk.android.debug" android:value="false"/>
     <application android:name="com.webengage.sdk.android.environment" android:value="in"/>
