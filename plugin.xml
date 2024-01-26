@@ -59,13 +59,13 @@
             <meta-data
             android:name="com.webengage.child.io"
             android:value="io:${io_version}" />
-        </config-file>
-	    <edit-config file="AndroidManifest.xml" parent="/manifest/application" mode="merge">
-     	      <application android:name="com.webengage.sdk.android.key"="$LICENCE_KEY"/>
-	      <application android:name="com.webengage.sdk.android.debug"="$DEBUG"/>
-	      <application android:name="com.webengage.sdk.android.environment"="$ENV"/>
-    </edit-config>
-
+       
+	        <edit-config file="AndroidManifest.xml" parent="/manifest/application" mode="merge">
+     	        <application android:name="com.webengage.sdk.android.key"="$LICENCE_KEY"/>
+	        <application android:name="com.webengage.sdk.android.debug"="$DEBUG"/>
+	        <application android:name="com.webengage.sdk.android.environment"="$ENV"/>
+    		</edit-config>
+	 </config-file>
         <resource-file src="src/android/version.properties" target="version.properties" />
         <source-file src="src/android/WebEngagePlugin.java" target-dir="src/com/webengage/cordova/"/>
         <framework src="src/android/WebEngagePlugin.gradle" custom="true" type="gradleReference"/>
