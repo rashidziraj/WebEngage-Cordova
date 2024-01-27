@@ -47,8 +47,6 @@
         </config-file>
 
 	    
-        
-	    
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <receiver
                 android:name="com.webengage.sdk.android.InstallTracker"
@@ -61,12 +59,6 @@
             android:name="com.webengage.child.io"
             android:value="io:${io_version}" />	       
 	 </config-file>
-
-<edit-config file="AndroidManifest.xml" parent="/manifest/application" mode="merge">
-    <application android:name="com.webengage.sdk.android.key" android:value="in~11b564243"/>
-    <application android:name="com.webengage.sdk.android.debug" android:value="false"/>
-    <application android:name="com.webengage.sdk.android.environment" android:value="in"/>
-</edit-config>
 
 	    
         <resource-file src="src/android/version.properties" target="version.properties" />
