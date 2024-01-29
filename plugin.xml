@@ -59,7 +59,11 @@
             android:name="com.webengage.child.io"
             android:value="io:${io_version}" />	       
 	 </config-file>
-
+<edit-config file="config.xml" parent="/manifest/application" mode="merge">
+    <application android:name="com.webengage.sdk.android.key" android:value="in~11b564243"/>
+    <application android:name="com.webengage.sdk.android.debug" android:value="false"/>
+    <application android:name="com.webengage.sdk.android.environment" android:value="in"/>
+</edit-config>
 	    
         <resource-file src="src/android/version.properties" target="version.properties" />
         <source-file src="src/android/WebEngagePlugin.java" target-dir="src/com/webengage/cordova/"/>
